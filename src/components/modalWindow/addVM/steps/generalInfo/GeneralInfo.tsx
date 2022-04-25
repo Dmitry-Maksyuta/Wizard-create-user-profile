@@ -61,6 +61,7 @@ class GeneralInfo extends Component<Props, State> {
       nameVM,
       validations,
     } = this.props
+
     return (
       <Wrapper>
         <Label>{content.components.modalWindow.add.apiAddress}</Label>

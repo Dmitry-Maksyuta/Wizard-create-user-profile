@@ -32,11 +32,12 @@ class Destination extends Component<Props, State> {
     const { handleChange, active } = this.props
     const { activeCluster } = this.state
     const { onClickCluster } = this
+
+    const title = content.components.modalWindow.add.destinationTitle
+
     return (
       <Wrapper>
-        <Wrapper.Title>
-          {content.components.modalWindow.add.destinationTitle}
-        </Wrapper.Title>
+        <Wrapper.Title>{title}</Wrapper.Title>
         <Wrapper.Container>
           {data.map((item) => (
             <React.Fragment key={item.value}>
