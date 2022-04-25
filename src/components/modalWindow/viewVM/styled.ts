@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper: any = styled.div`
   padding: 20px 0;
@@ -29,7 +29,7 @@ export const Table: any = styled.div`
 
 export const THead: any = styled.div`
   display: flex;
-  
+
   & > div:nth-child(1) {
     width: 6%;
     border: none;
@@ -56,7 +56,8 @@ export const Item: any = styled.div`
   align-items: center;
   padding: 0 5px 0 10px;
   border-left: 1px solid silver;
-  color: ${({color}) => color === undefined ? 'initial' : color === 'true' ? 'green': 'red'}
+  color: ${({ color }) =>
+    color === undefined ? 'initial' : color === 'true' ? 'green' : 'red'};
 `
 
 export const Checkbox = styled.input`
@@ -107,7 +108,7 @@ export const BtnDelete = styled.div`
   height: 28px;
   background-color: #25aafa;
   color: #fff;
-`;
+`
 
 export const Close = styled.div`
   margin: 10px 20px 0 calc(100% - 110px);
@@ -122,18 +123,18 @@ export const Close = styled.div`
   color: #fff;
 `
 
-Wrapper.Title = Title;
-Wrapper.Content = Content;
-Wrapper.Close = Close;
+Wrapper.Title = Title
+Wrapper.Content = Content
+Wrapper.Close = Close
 
-Content.Table = Table;
-Content.BtnDelete = BtnDelete;
+Content.Table = Table
+Content.BtnDelete = BtnDelete
 
-Table.THead = THead;
-Table.TBody = TBody;
+Table.THead = THead
+Table.TBody = TBody
 
-THead.Item = Item;
+THead.Item = Item
 
-Item.Checkbox = Checkbox;
+Item.Checkbox = Checkbox
 
-TBody.Row = Row;
+TBody.Row = Row

@@ -91,7 +91,7 @@ class GeneralInfo extends Component<Props, State> {
           <Icon
             src={showPassword ? show : hide}
             onClick={onShowPassword}
-            alt={'password'}
+            alt="password"
           />
         </Container>
 

@@ -42,7 +42,7 @@ class ViewVM extends Component<Props, MyState> {
     } = this.props
     const { allSelected, visibilityBtn } = this.state
     const title = content.components.modalWindow.view.subTitle
-    const tHead = content.components.modalWindow.view.tHead
+    const { tHead } = content.components.modalWindow.view
     const deleteBtn = content.components.modalWindow.view.delete
     const closeBtn = content.components.modalWindow.view.close
 

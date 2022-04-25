@@ -1,6 +1,6 @@
-import Component from './AddVM'
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
+import Component from './AddVM'
 import * as selectors from '../../../redux/registerVM/selectors'
 import { registerVMActions } from '../../../redux/registerVM/reducer'
 import { TakenStepAction } from '../../../redux/registerVM/types'

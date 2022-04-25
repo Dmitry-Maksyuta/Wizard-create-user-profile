@@ -1,4 +1,4 @@
-import styled  from 'styled-components'
+import styled from 'styled-components'
 
 export const Background = styled.div`
   position: fixed;
@@ -79,11 +79,11 @@ export const Body = styled.div`
   height: calc(100% - 50px);
 `
 
-Wrapper.Header = Header;
-Wrapper.Body = Body;
+Wrapper.Header = Header
+Wrapper.Body = Body
 
-Header.Title = Title;
-Header.CloseContainer = CloseContainer;
+Header.Title = Title
+Header.CloseContainer = CloseContainer
 
-CloseContainer.Line = Line;
-CloseContainer.Icon = Icon;
+CloseContainer.Line = Line
+CloseContainer.Icon = Icon

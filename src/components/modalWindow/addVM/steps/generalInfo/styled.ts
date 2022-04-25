@@ -10,7 +10,8 @@ export const Input = styled.input<{ validation: null | boolean }>`
   font-size: 15px;
   font-weight: 300;
   padding: 0 10px;
-  border: 1px solid ${({validation}) => validation === false ? '#da263b' : '#dee0e2'};
+  border: 1px solid
+    ${({ validation }) => (validation === false ? '#da263b' : '#dee0e2')};
   height: 28px;
   width: 300px;
   outline: none;
@@ -34,7 +35,8 @@ export const Select = styled.select<{ validation: null | boolean }>`
   font-size: 15px;
   font-weight: 300;
   padding: 0 10px;
-  border: 1px solid ${({validation}) => validation === false ? '#da263b' : '#dee0e2'};
+  border: 1px solid
+    ${({ validation }) => (validation === false ? '#da263b' : '#dee0e2')};
   height: 28px;
   width: 320px;
   outline: none;

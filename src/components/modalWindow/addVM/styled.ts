@@ -50,10 +50,12 @@ export const Taken = styled.div<TakenProps>`
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  border: 1px solid ${({ taken, active }) => active || taken ? '#25aafa' : '#c6c1c147'};
+  border: 1px solid
+    ${({ taken, active }) => (active || taken ? '#25aafa' : '#c6c1c147')};
   font-size: 9px;
-  color: ${({ taken, active }) => active ? '#fff' : taken ? '#25aafa' : 'rgba(0,0,0,0.35)'};
-  background-color: ${({ active }) => active ? '#25aafa' : '#fff'};
+  color: ${({ taken, active }) =>
+    active ? '#fff' : taken ? '#25aafa' : 'rgba(0,0,0,0.35)'};
+  background-color: ${({ active }) => (active ? '#25aafa' : '#fff')};
 `
 
 export const Content = styled.div`
@@ -94,12 +96,12 @@ export const Next = styled.div`
   border-radius: 3px;
 `
 
-Wrapper.Menu = Menu;
-Wrapper.Content = Content;
+Wrapper.Menu = Menu
+Wrapper.Content = Content
 
-Menu.Item = Item;
-Item.Name = Name;
-Item.Taken = Taken;
+Menu.Item = Item
+Item.Name = Name
+Item.Taken = Taken
 
-Buttons.Prev = Prev;
-Buttons.Next = Next;
+Buttons.Prev = Prev
+Buttons.Next = Next

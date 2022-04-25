@@ -1,6 +1,6 @@
-import Component from './ViewVM'
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
+import Component from './ViewVM'
 import * as selectors from '../../../redux/listVM/selectors'
 import { listActions } from '../../../redux/listVM/reducer'
 import { StateProps, DispatchProps, MyProps, MyState } from './types'

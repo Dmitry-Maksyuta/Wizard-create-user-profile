@@ -36,9 +36,7 @@ class Summary extends Component<Props> {
             <Info.Value>{api}</Info.Value>
           </Content.Info>
           <Content.Info>
-            <Info.Name>
-              {content.components.modalWindow.add.login}:
-            </Info.Name>
+            <Info.Name>{content.components.modalWindow.add.login}:</Info.Name>
             <Info.Value>{login}</Info.Value>
           </Content.Info>
           <Content.Info>
@@ -48,21 +46,21 @@ class Summary extends Component<Props> {
             <Info.Value>{'*'.repeat(password)}</Info.Value>
           </Content.Info>
           <Content.Info>
-            <Info.Name>
-              {content.components.modalWindow.add.type}:
-            </Info.Name>
+            <Info.Name>{content.components.modalWindow.add.type}:</Info.Name>
             <Info.Value>{processor}</Info.Value>
           </Content.Info>
           <Content.Info>
-            <Info.Name>
-              {content.components.modalWindow.add.name}:
-            </Info.Name>
+            <Info.Name>{content.components.modalWindow.add.name}:</Info.Name>
             <Info.Value>{name}</Info.Value>
           </Content.Info>
         </Wrapper.Content>
         <Wrapper.PowerVM onClick={handleChangePowerVM}>
-          <PowerVM.Checkbox type="checkbox" checked={stateVM} onChange={() => {}} />
-            {content.components.modalWindow.add.summaryCheckbox}
+          <PowerVM.Checkbox
+            type="checkbox"
+            checked={stateVM}
+            onChange={() => {}}
+          />
+          {content.components.modalWindow.add.summaryCheckbox}
         </Wrapper.PowerVM>
       </Wrapper>
     )

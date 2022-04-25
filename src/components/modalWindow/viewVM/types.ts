@@ -1,23 +1,23 @@
-import {ListItem} from "../../../redux/listVM/types";
+import { ListItem } from '../../../redux/listVM/types'
 
 export interface StateProps {
-    list: ListItem[]
+  list: ListItem[]
 }
 
 export interface DispatchProps {
-    deleteVM: () => void
-    selectedAll: (state: boolean) => void
-    changeActive: (index: number) => void
-    changeSelect: (index: number) => void
+  deleteVM: () => void
+  selectedAll: (state: boolean) => void
+  changeActive: (index: number) => void
+  changeSelect: (index: number) => void
 }
 
 export interface MyProps {
-    toggle: () => void
+  toggle: () => void
 }
 
 export interface MyState {
-    allSelected: boolean,
-    visibilityBtn: boolean
+  allSelected: boolean
+  visibilityBtn: boolean
 }
 
 export type Props = StateProps & DispatchProps & MyProps
