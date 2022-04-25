@@ -1,0 +1,43 @@
+{
+  "containers": {
+    "main": {
+      "title": "Manage Virtual machines",
+      "btnAdd": "Add VM",
+      "btnView": "VM List"
+    }
+  },
+  "components": {
+    "modalWindow": {
+      "altIconClose": "Close",
+      "add": {
+        "title": "Add Virtual Machine",
+        "steps": ["General Info", "Destination", "Summary"],
+        "apiAddress": "Virtual Machine Address",
+        "login": "Login",
+        "password": "Password",
+        "type": "Processor type",
+        "name": "Virtual machine name",
+        "destinationTitle": "Please select destination repository",
+        "summary": "Summary",
+        "summaryCheckbox": "Power on VM after creating",
+        "btnNext": "Next",
+        "btnBack": "Back",
+        "btnCreate": "Create"
+      },
+      "view": {
+        "title": "Nutanix mine with Veeam cluster setup",
+        "subTitle": "Manage VMs",
+        "tHead": {
+          "select": "select",
+          "name": "VM Name",
+          "processor": "Processor",
+          "api": "IP address",
+          "repository": "Repository",
+          "active": "Power"
+        },
+        "delete": "Delete VMs",
+        "close": "Close"
+      }
+    }
+  }
+}
